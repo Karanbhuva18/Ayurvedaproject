@@ -1,0 +1,37 @@
+.profile{
+    height: 80px;
+}
+.profile img{
+    height: 60px;
+}
+
+.writeinput{
+    height: 300px;
+    width: 100%;
+    margin-bottom:100px;
+    border: 0;
+    outline: none;
+}
+.writeinput:hover{
+    border: 0;
+}
+.editable-content {
+    min-height: 200px;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+  }
+
+.imgupload img{
+    height: 40px;
+    cursor: pointer;
+}
+.post{
+    background-color: rgb(126, 199, 221);
+    color: white;
+    border-radius: 15px;
+    margin-right: 10px;
+    height: 35px;
+}
+.upload{
+    height: 50px;
+}
