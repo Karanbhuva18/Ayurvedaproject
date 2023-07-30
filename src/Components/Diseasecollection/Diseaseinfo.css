@@ -1,0 +1,5 @@
+.maincontaint{
+    display: flex;
+    gap: 3;
+    background-color: whitesmoke;
+}

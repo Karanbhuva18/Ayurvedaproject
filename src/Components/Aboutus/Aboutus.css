@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wraper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+
+}
+.continer{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transform: translateZ(-25px) scale(4);
+}
+h1{
+    position: absolute;
+    top:7rem;
+    left: 40%;
+    font-size: 10rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1rem;
+    z-index: 1;
+}
+section{
+    /* margin-top: 600px; */
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 5rem 0;
+}
+.secHeading{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment:fixed ;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 0.7rem 4rem;
+    top: 45%;
+    left: 52%;
+    transform: translateX(-50%) translateX(-50%);
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+    
+}
+.bg1{
+    background-image: url("https://st2.depositphotos.com/1092019/9700/i/950/depositphotos_97006952-stock-photo-what-we-do-on-white.jpg");
+}
+.bg2{
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5760269145bf21440773e26c/1532517734122-G2XKNP3V3X2SG2CC9Z95/Goals.jpg?format=2500w");
+}
+.bg3{
+    background-image: url("https://images.unsplash.com/photo-1560719168-32825e16d2c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJlJTIwcm9hZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80");
+}
+.bg4{
+    background-image: url("https://www.isglobal.org/documents/10179/22225/ODS-circulo-EN-web.jpg/e24b39dd-45b6-44b2-b05d-7a501716b7e9?t=1671473183000");
+}

@@ -1,0 +1,39 @@
+/* Diseasebar.css */
+.sidebar {
+    width: 400px; /* Set the desired width for the sidebar */
+    /* background-color: #f5f5f5; */
+    padding: 20px;
+    flex: 4;
+    
+    /* border-right: 1px solid #ddd; */
+  }
+  
+  .list-group-item {
+    cursor: pointer;
+  }
+  
+  .list-group-item:hover {
+    background-color: #f8f9fa; /* Light gray background on hover */
+  }
+  
+  /* .list-group ul {
+    display: none; /* Hide sub-items by default */
+  /* } */ 
+  
+  .list-group-item.active ul {
+    display: block; /* Show sub-items when main list item is active */
+  }
+  .subiteam{
+    border: none;
+    
+  }
+  /* Add this to your Diseasebar.css */
+.name-list {
+  margin-left: 20px; /* Add some indentation for better visual representation */
+}
+/* Add this to your Diseasebar.css */
+.list-group-item.active {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
