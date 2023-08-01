@@ -1,0 +1,121 @@
+*,
+ ::before {
+    box-sizing: border-box;
+}
+.Que-com{
+    width:60%;
+    height: 100px;
+    border: 1px solid black;
+    background-color: #FFFFFF;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+   
+}
+.quepro{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    top: 15px;
+    left: 5px;
+}
+.que-fild{
+    position: absolute;
+    width:90%;
+    height: 45px;
+    left:60px ;
+    top: 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding-left: 10px;
+   
+    background-color: #F7F7F8;
+}
+.buttoncontainer{
+    width: 100%;
+    position: absolute;
+    bottom: 4px;
+   display: flex;
+   justify-content: center;  
+}
+.buttoncontainer button{
+    width:240px;
+    border-radius: 20px;
+    margin: 0 2px;
+    border: none;
+   /* margin-right: 6px; */
+}
+/* .Ans_container{
+    height: 70vh;
+        width: 100%;
+        border: 2px solid black;
+        margin-top: 150px;
+        overflow-y:hidden ;
+} */
+.m_wraper{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+     background-color: rgba(189, 189, 189, 0.9);
+   
+}
+.had{
+    text-align: center;    
+    font-size: large;
+    font-weight: 500;
+}
+.Ans_container{
+    position: fixed;
+    left:50% ;
+    right: 0;
+    bottom: 0;
+    top: 50%;
+    /* border: 2px solid black; */
+    /* background-color: rgba(189, 189, 189, 0.9); */
+    transform: translate(-50%,-50%);
+    background-color: #FFFFFF;
+    height: 70vh;
+    max-width: 70%;
+    box-shadow: 1px 2px 8px 4px rgba(20,20,20,0.4);
+}
+.imgcontainer{
+     height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.uploadimg{
+    height: 140px;
+    width: auto;
+    /* border: 2px solid black; */
+    cursor: pointer;
+    border-radius: 0%;
+}
+.que_content{
+    width: 100%;
+    max-height: 7.5rem;
+    min-height: 7.5rem;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.cancle_submit{
+    display: flex;
+   justify-content: flex-end;
+   /* margin-top: 10px;
+    */
+}
+
+.cancle_submit .cancle ,.submit{
+    margin-right: .5rem;
+   border: none;
+   background-color: #A42623;
+   color: white;
+   height: 2rem;
+   width: 5rem;
+    border-radius: 4px;
+   
+}
+

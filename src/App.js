@@ -1,31 +1,37 @@
-import React from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import Topbar from './Components/navbar/topbar';
-import Header from './Components/header/Header';
-import Main from './Components/Home/Main';
-import Single from './Components/Home/Single';
-import Nav from './Components/navbar/Nav';
-import Write from './Components/Write/Write';
-import Ques from './Components/queandans/Ques';
-const App = () => {
+import React from "react";
+
+import Sideb from "./sidebar/Sideb";
+import Blog from "./sidebar/Blog";
+import { BrowserRouter as Router, Switch, Route, Link, Routes, BrowserRouter } from 'react-router-dom';
+import Qustion from "./qpopup/Qustion";
+// import Card from './card/Card';
+
+import Signup from "./Signup_page/Signup";
+import Qmodal from "./QNA/Qmodal";
+import Loginform from "./loginpage/LoginForm";
+function App() {
   return (
-    <BrowserRouter>
-      <div>
-        {/* <Topbar /> */}
-        <Nav />
+    <>
+    
         
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/Write" element={<Write />} />
-          <Route path="/Single" element={<Single />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
-    // <div>
-    //     <Ques />
- 
-    // </div>
+  
+      {/* <div className="d-flex justify-content-around blogsecction">
+        <Blog></Blog>
+       <Sideb/>
+      </div> */}
+
+    
+      {/* <Qustion/> */}
+   
+        {/* <Signup/> */}
+        {/* <Loginform/> */}
+       
+{/* <Qustion/> */}
+
+
+
+    </>
   );
-};
+}
 
 export default App;
