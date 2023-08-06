@@ -10,6 +10,11 @@ const Diseasebar = () => {
     setSelectedCategoryIndex((prevIndex) => (prevIndex === index ? -1 : index));
   };
 
+  const handleItemClick = (itemName, event) => {
+    console.log(itemName);
+    event.stopPropagation();
+  };
+
   return (
     <div className="sidebar">
       <ul className="list-group">
@@ -23,7 +28,13 @@ const Diseasebar = () => {
             {selectedCategoryIndex === index && (
               <ul className="name-list">
                 {curele.name.map((item, idx) => (
-                  <li className="list-item" key={idx}>{item}</li>
+                  <li
+                    className="list-item"
+                    key={idx}
+                    onClick={(event) => handleItemClick(item, event)}
+                  >
+                    {item}
+                  </li>
                 ))}
               </ul>
             )}

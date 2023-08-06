@@ -1,0 +1,376 @@
+/* CSS for the header container */
+
+.header_container {
+  position: relative;
+  width: 100%;
+}
+
+.header_container img {
+  width: 100%;
+  height: 700px;
+  opacity: 0.9;
+}
+
+.headerinfo {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  color: white;
+  font-weight: bolder;
+  font-size: x-large;
+  text-align: center;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.headerinfo p {
+  text-align: center;
+}
+
+.headerinfo button {
+  background-color: rgba(253, 252, 251, 0.678);
+  color: #b86f338a;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.headerinfo button:hover {
+  background-color: rgba(219, 141, 52, 0.7);
+  color: white;
+}
+
+.headerinfo button:focus {
+  outline: none;
+}
+
+/* Responsive styles using media queries */
+
+/* For screens up to 768px wide */
+@media (max-width: 768px) {
+  .headerinfo {
+    bottom: 30px;
+    width: 90%;
+  }
+}
+
+/* For screens up to 576px wide */
+@media (max-width: 576px) {
+  .headerinfo {
+    bottom: 20px;
+    width: 95%;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .headerinfo p {
+    font-size: 14px;
+  }
+}
+/* 
+
+.image-slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 95%;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 400px; /* Set the desired height of the slider */
+    /* border-radius: 25px;
+  }
+  
+  .image-slider-img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+  }
+  
+  .slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+    z-index: 1;
+  }
+  
+  .slider-control:hover {
+    color: #f5f5f5;
+  }
+  
+  .slider-control:first-child {
+    left: 20px;
+  }
+  
+  .slider-control:last-child {
+    right: 20px;
+  } */
+  
+  /* CSS for blog cards and container */
+  .messageboard{
+    height: 450px;
+    width: 100%;
+    background-image: url("https://cdn.pixabay.com/photo/2017/01/24/03/53/plant-2004483_1280.jpg");
+    object-fit: cover;
+
+    }
+    .messtitle{
+      padding: 150px;
+      color: #6B85AE;
+    }
+
+
+
+  .features{
+    background-color: #eaeaeba1;
+  } 
+.blogs_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.blog_cards {
+  width: 350px;
+  height: 450px;
+  border: 1px solid rgb(202, 198, 198);
+  margin: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.imagofblog img {
+  width: 349px;
+  height: 220px;
+  border-radius: 10px;
+  
+}
+
+.bloginfo {
+  height: 200px;
+  width: 350px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.bloginfo h3 {
+  padding-left: 30px;
+}
+
+.bloginfo p {
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #C8C8C8;
+  line-height: 18px;
+}
+
+.bloginfo button {
+  background-color: #3EDD84;
+  color: white;
+  width: 90px;
+  padding: 10px 18px;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 70px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: 'merriweather';
+}
+
+/* Responsive styles using media queries */
+
+/* For screens up to 768px wide */
+@media (max-width: 768px) {
+  .blogs_container {
+    justify-content: flex-start;
+  }
+
+  .blog_cards {
+    width: 45%;
+    height: auto;
+    margin: 10px 5px;
+  }
+
+  .imagofblog img {
+    width: 100%;
+    height: 220px;
+  }
+
+  .bloginfo {
+    width: 100%;
+    height: auto;
+  }
+
+  .bloginfo h3,
+  .bloginfo p {
+    padding: 15px;
+  }
+
+  .bloginfo button {
+    margin: 15px auto;
+  }
+}
+
+/* For screens up to 576px wide */
+@media (max-width: 576px) {
+  .blog_cards {
+    width: 90%;
+  }
+
+  .bloginfo h3 {
+    font-size: 1.5rem;
+  }
+
+  .bloginfo p {
+    font-size: 14px;
+  }
+}
+/* CSS for question container */
+.quecontainer {
+  background-color: #fdf7f7;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.questioncard {
+  background-color: #fff5db;
+  width: calc(50% - 40px);
+  max-width: 600px;
+  margin: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.ques {
+  font-weight: bolder;
+  font-size: 2rem;
+  word-spacing: 3px;
+  color: #69747e;
+  padding: 20px;
+}
+
+.ans {
+  padding: 0 20px 20px;
+}
+
+.quesdev {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 20px;
+}
+
+.quesdev button {
+  background-color: #ffe5b4;
+  border: none;
+  border-radius: 20px;
+  color: #adadac;
+  cursor: pointer;
+}
+
+.queheading {
+  background-color: #fdf7f7;
+  color: #808b96;
+  padding: 20px 40px;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+
+/* CSS for advantage container */
+.advatiscontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 20px;
+}
+
+.imgsection {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.imgsection img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 4px 8px 8px rgba(0.2, 0.2, 0.2, 0.2);
+  object-fit: cover;
+}
+
+.textsection {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.titleofadv {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #71b4a4;
+  margin-bottom: 10px;
+}
+
+.readbutton button {
+  background-color: #98a86d;
+  border: none;
+  color: whitesmoke;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.readbutton button:hover {
+  color: #98a86d;
+  background-color: whitesmoke;
+}
+
+.descofyoga {
+  text-align: center;
+  margin-top: 10px;
+}

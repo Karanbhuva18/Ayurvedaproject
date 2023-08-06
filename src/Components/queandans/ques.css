@@ -48,11 +48,12 @@
   .imgupload{
     border: none;
     outline: none;
+   
   }
   .imgupload img {
     height: 40px;
     cursor: pointer;
-    
+    margin-bottom: 40px;
   }
   
   .post {
@@ -60,6 +61,7 @@
     color: white;
     border-radius: 15px;
     height: 35px;
+    margin-top: 30px;
   }
   
   .upload {
@@ -76,7 +78,7 @@
   
   .imagesection img {
     width: 100%;
-    height: 100%;
+    height: 80%;
     object-fit: cover;
   }
   

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+// import { Routes, Route, BrowserRouter } from 'react-router-dom';
 // import Topbar from './Components/navbar/topbar';
 // import Header from './Components/header/Header';
 // import Main from './Components/Home/Main';
@@ -7,7 +7,9 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 // import Nav from './Components/navbar/Nav';
 // import Write from './Components/Write/Write';
 // import Ques from './Components/queandans/Ques';
-import Diseaseinfo from './Components/Diseasecollection/Diseaseinfo';
+// import Questionnpost from './Components/QNP/Questionnpost';
+import Homepage from './Components/HomePage/Homepage';
+// import Diseaseinfo from './Components/Diseasecollection/Diseaseinfo';
 // import Aboutus from './Components/Aboutus/Aboutus';
 const App = () => {
   return (
@@ -24,9 +26,11 @@ const App = () => {
     //   </div>
     // </BrowserRouter>
     <div>
-        {/* <Ques /> */}
-        {/* <Aboutus /> */}
-        <Diseaseinfo />
+        {/* <Ques />
+        <Aboutus /> */}
+        {/* <Diseaseinfo /> */}
+        <Homepage />
+        {/* <Questionnpost />  */}
     </div>
   );
 };

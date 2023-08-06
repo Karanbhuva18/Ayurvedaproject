@@ -44,7 +44,7 @@ const Ques = () => {
                         <div className='upload d-flex justify-content-between border-top'>
                           
                             <div className='imgupload mt-2 ' onClick={handleImageClick} htmlFor='fileInput'><img src='https://pixsector.com/cache/517d8be6/av5c8336583e291842624.png' alt='imgupload'/></div>
-                            <button type="button" class="btn btn-info post mt-2">Post</button>
+                            <button type="button" class="btn btn-info post mt-3">Post</button>
                         </div>
                         <input type='file' style={{display:"none"}} onChange={handleImagechange} ref={inputRef}/>
                 </div>

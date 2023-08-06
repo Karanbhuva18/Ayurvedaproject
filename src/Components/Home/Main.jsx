@@ -13,8 +13,7 @@ const Main = () => {
       <Header />
       <div className="home">
         <Posts />
-        <Sidebar />
-        {/* <Sideb /> */}
+       
       </div>
     </>
   );

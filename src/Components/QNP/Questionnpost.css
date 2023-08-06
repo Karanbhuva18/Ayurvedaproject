@@ -1,0 +1,58 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+.wraper{
+    height: auto;
+    width: auto;
+    margin: 50px;
+    
+}
+.post-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.postbox{
+    height: 600px;
+    width: 500px;
+    border: 1px solid rgb(156, 154, 154);
+   
+}
+.post-user-info{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    
+}
+.profile-img img{
+    height: 50px;
+    width: 50px;
+    border-radius: 25%;
+}
+.user-name .profile-name{
+    font-size: medium;
+    font-weight: 600;
+}
+.questionnans{
+    margin: 10px;
+
+}
+.question{
+    font-weight: 700;
+}
+.imageofpost{
+    height: 400px;
+    width: 500px;
+}
+.imageofpost img{
+    height: 370px;
+    width: 99.5%;
+}
+.nav-section{
+    display: flex;
+    margin-left: 30px;
+    gap: 20px;
+}
