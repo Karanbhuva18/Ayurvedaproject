@@ -16,7 +16,7 @@ const Sideb = () => {
             inventore praesentium exercitationem perferendis
           </p>
 
-          {/* <div className="Social-media">
+          <div className="Social-media">
             <div className="insta">
               <i class="bi bi-instagram"></i>
             </div>
@@ -26,7 +26,7 @@ const Sideb = () => {
             <div className="like">
               <i class="bi bi-heart"></i>
             </div>
-          </div> */}
+          </div>
           
 
           

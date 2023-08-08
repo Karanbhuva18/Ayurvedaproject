@@ -9,8 +9,7 @@
     background-color: #FFFFFF;
     position: relative;
     margin: auto;
-    margin-bottom: 20px;
-   
+    margin-top: 80px;
 }
 .quepro{
     position: absolute;
@@ -44,7 +43,7 @@
     border-radius: 20px;
     margin: 0 2px;
     border: none;
-   /* margin-right: 6px; */
+   
 }
 /* .Ans_container{
     height: 70vh;
@@ -89,10 +88,11 @@
 }
 .uploadimg{
     height: 140px;
-    width: auto;
+    width:auto ;
     /* border: 2px solid black; */
     cursor: pointer;
     border-radius: 0%;
+    
 }
 .que_content{
     width: 100%;
@@ -118,4 +118,89 @@
     border-radius: 4px;
    
 }
+.media{
+        height:auto;
+        width: 45%;
+        margin: auto;
+        /* border: 2px solid black; */
+        margin-top: 10px;
+        /* padding: 1rem; */
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;}
+        
+.name{
+    /* border: 2px solid black; */
+    display: block;
+}
+.name .review{
+    margin-top: 0.5rem;
+}
+/* .mediaconent{
+    border: 2px solid black;
 
+} */
+.mediaimg{
+    
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right:1rem ;
+}
+.media .username{
+    font-weight: 700;
+    font-size: 13px;
+}
+.media .follow{
+    font-size: 13px;
+    font-weight: 500;
+    color: #2E69FF;
+    margin-left: .5rem;
+}
+.top {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    
+}
+
+.userinfo{
+    display: flex;
+    flex-direction:column ;
+}
+.info{
+    display: flex;
+}
+/* .pageimg{
+    display: block;
+} */
+.review{
+   padding:5px ;
+  
+    
+}
+.imga1{
+    width: 100%;
+    height:auto;
+        margin-bottom: .5rem;
+}
+.response{
+    /* border: 2px solid black; */
+    display: inline;
+    margin-left:1.5rem;
+}
+.response i{
+    margin-right: 1rem;
+    margin-left: .5rem;
+}
+.comment{
+    font-weight: 100;
+    font-size:12px ;
+    margin-left: 3px;
+
+}
+.share{
+    font-weight: 100;
+    font-size:12px ;
+    margin-left: 3px;
+}
