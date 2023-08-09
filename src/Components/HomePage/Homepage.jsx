@@ -24,7 +24,7 @@ const Homepage = () => {
   return (
     <>
     <div className='header_container'>
-          <img src="img/Ayurvedaimg1.jpg" alt='imgheader'/>
+          <img src="img/Ayurvedaimghome.jpg" alt='imgheader'/>
           <div className='headerinfo'>
           <div className='heading'>start your Ayurveda journy with us.</div>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quia, iusto culpa veritatis voluptatem maiores, laborum, a voluptates vel consectetur ipsum fugit hic necessitatibus commodi sequi error ullam architecto repudiandae?</p>
@@ -34,21 +34,13 @@ const Homepage = () => {
     </div>
     <div className='messageboard'>
         <div className='messtitle'>
-              <h1>Unlock the secrets to living <br/> well with ayurveda </h1>
+              <div className='mesheading'>Unlock the secrets to living <br/> well with ayurveda </div>
               <p>Posuere sodales platea elit libero tempus penatibus tellus fermentum aliquet<br/> elementum. Montes tristique rutrum ornare vel turpis maecenas lacus senectus.<br/> Mi interdum hendrerit enim platea si.</p>
         </div>
     </div>
-    {/* <div className='image-slider-container'>
-      <button className='slider-control' onClick={() => setIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)}>
-        <i className="fa-solid fa-angle-left"></i>
-      </button>
-      <img src={images[index]} alt='img1' className='image-slider-img rounded-8' />
-      <button className='slider-control' onClick={handleChange}>
-        <i className="fa-solid fa-angle-right"></i>
-      </button>
-    </div> */}
+    
     <div className='features'>
-      <h1 style={{display:"flex",justifyContent:"center",alignItems:"center",color:"#5D6D7E"}}>Blogs</h1>
+      <div className='blogheading'>Blogs</div>
         <div className='blogs_container'>
                   <div className='blog_cards'>
                       <div className='imagofblog'>
@@ -88,7 +80,7 @@ const Homepage = () => {
                   
         </div>
 
-        <div className='queheading'><h1>We Can solve Your Question Also</h1></div>
+        <div className='queheading'><div className='quesheading'>We Can solve Your Question Also</div></div>
         
         <div className='quecontainer'>
          
@@ -149,6 +141,27 @@ This experience of unity is also the aim of Maharishi AyurVeda. For instance, th
               </div>
              
         </div>
+        <footer>
+         <div className='footercontainer'>
+             <div className='socialIcons'>
+                <div href=''><i class="fa-brands fa-instagram"></i></div>
+                <div href=''><i class="fa-brands fa-facebook"></i></div>
+                <div href=''><i class="fa-brands fa-twitter"></i></div>
+                <div href=''><i class="fa-brands fa-youtube"></i></div>
+             </div>
+             <div className='footernav'>
+               <ul>
+                <li><a href='#'>blog</a></li>
+                <li><a href='#'>WriteBLog</a></li>
+                <li><a href='#'>DiseaseInfo</a></li>
+                <li><a href='#'> QNA</a></li>
+               </ul>
+             </div>
+             <div className='footerbutton'> 
+                  <p>Copyright &copy;2023 Developed by <span className='devloper'> karan,dhruhit</span></p>
+             </div>
+             </div>
+        </footer>
     </div>
    
     </>

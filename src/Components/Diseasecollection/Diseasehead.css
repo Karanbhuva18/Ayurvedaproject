@@ -1,0 +1,13 @@
+.diseasehead{
+    margin-top: 30px;
+    padding: 50px;
+    background-color: rgb(237, 241, 243);
+}
+.headtitle{
+    font-size: 2.5rem;
+    color:rgb(25, 156, 207);
+}
+.headsubtitle{
+    font-size: 2.5rem;
+    color: cadetblue;
+}

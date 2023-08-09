@@ -1,12 +1,12 @@
 import React from 'react';
-
+import './Diseasehead.css';
 
 const Header = () => {
   return (
     <>
-      <div style={{backgroundColor: "#EAF2F8"}} className='container-fluid  p-5' >
-        <h1 className='text-center'>Disease Library</h1>
-        <h2 className='text-center'>Know About Disease In Brief With Ayurveda</h2>
+      <div  className='container-fluid   diseasehead' >
+        <div className='text-center headtitle'>Disease Library</div>
+        <h2 className='text-center headsubtitle'>Know About Disease In Brief With Ayurveda</h2>
       </div>
     </>
   );

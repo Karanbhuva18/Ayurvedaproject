@@ -5,7 +5,7 @@ const Diseasedesc = () => {
     <>
       <div className='desccontainer'>
             <div className='container'>
-                <div className='Diseasetitle'><h1>Information about :-</h1><h2>Joint Pain</h2></div>
+                <div className='Diseasetitle'><div className='infoabout'>Information about :-</div><div>Joint Pain</div></div>
                 <div className='imgcontainer'><img  src='https://www.hindustantimes.com/ht-img/img/2023/03/23/1600x900/FbQAhoBagAA2ug0_1662381108492_1679557681667_1679557681667.jpg' alt='jointimg' /></div>
                 <p className='decription'> 
                 Joint pain refers to discomfort, soreness, or aches in the joints of the body, which can affect one or more joints. It is a common health issue that can be caused by various factors, including injury, inflammation, arthritis, overuse, or underlying medical conditions. Joint pain can significantly impact a person's mobility, flexibility, and overall quality of life.

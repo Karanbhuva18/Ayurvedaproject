@@ -42,8 +42,31 @@ const Nav = () => {
                   Single
                 </NavLink>
               </li>
-
-             
+              <li className="nav-item">
+                <NavLink  to="/About" className="nav-link"  style={{ color: '#23914E' }}>
+                  AboutUs
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink  to="/Diseaseinfo" className="nav-link"  style={{ color: '#23914E' }}>
+                Diseaseinfo
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink  to="/Question" className="nav-link"  style={{ color: '#23914E' }}>
+                Question
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink  to="/login" className="nav-link"  style={{ color: '#23914E' }}>
+                Login
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink  to="/signup" className="nav-link"  style={{ color: '#23914E' }}>
+                SignUp
+                </NavLink>
+              </li>
 
             </ul>
 
