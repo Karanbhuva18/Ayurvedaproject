@@ -58,6 +58,7 @@
   border: none;
   padding: 20px;
   width: 70vw;
+  height: 50px;
 }
 
 .writeText {
@@ -116,4 +117,7 @@
 
 .Icons button{
   border: 0;
+}
+.titlelable{
+  font-size: 2.0rem;
 }

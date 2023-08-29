@@ -37,3 +37,32 @@
     display: block; /* Show sub-items by default on smaller screens */
   }
 }
+.maindisinfo{
+  display: flex;
+}
+/* .desccontainer{
+  flex:8;
+  border: 2px solid #c5c7c9;
+  margin-top: 20px;
+  position: relative;
+  background-color: #eafaf1fb;
+  color: #00294D;
+}
+.imgcontainer{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.imgcontainer img{
+  height: 200px;
+  width: 300px;
+ 
+}
+.Diseasetitle{
+  position: absolute;
+  left: 40px;
+  top: 50px;
+}
+.infoabout{
+  font-size: 2.5rem;
+} */

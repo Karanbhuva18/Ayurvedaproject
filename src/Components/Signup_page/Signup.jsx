@@ -1,57 +1,68 @@
-import React from "react";
-
+import React, { useState } from "react";
+import axios from "axios";
+import { NavLink,useNavigate  } from 'react-router-dom';
 import "./signup.css";
 const Signup = () => {
+  const history = useNavigate();
+  const [rout,setRout] = useState("")
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    password: "",
+    cpassword: ""
+});
+
+const handleInput = (e) => {
+    const { name, value } = e.target;
+    setUser((prevUser) => ({
+        ...prevUser,
+        [name]: value
+    }));
+};
+
+const PostData = async (e) => {
+    e.preventDefault();
+   
+
+    try {
+      const response = await axios.post("http://localhost:5000/blogs/signup", user);
+
+        setRout("/login")
+        console.log('User registered:');
+        history("/login")
+       
+    } catch (error) {
+      console.error('Signup failed:');
+    }
+};
+
   return (
     <>
-      {/* <div classname="main_both">
-                    <div className="just">
-                <div className="photo">
-                <img  src="loginimg.jpg" style={{height:'350px', width:'auto' }}></img>
-                </div>
-               
-        <div className="form">
-          <form >
-                    <div className="hading"><h2>welcome</h2></div>
-                    <div className="email">
-                        <label htmlFor="email">Email</label>
-                    </div>
-                    <div className="email_filed">
-                    <input type="text" name="email" id="email" />
-                    </div>
-
-           
-                        <div className="password">
-                                    <label htmlFor="passw">Password</label>
-                                    <div className="pass-filed">
-                                <input type="text" name="passw" id="passw" />
-                                    </div>
-                        </div>
-           
-           
-            <button className="login" type="submit">Login</button>
-            <div className="forget">
-            <a  href="#">forgot password?</a>
-            </div>
-          </form>
-          </div>
-          </div>
-          </div> */}
-     
-         
- 
+      
   <div className="register-photo">
     <div className="form-container">
       <div className="image-holder" />
-      <form method="post">
+      <form method="POST" className="register-form" id="register-id">
         <h2 className="text-center ">
           <strong>Create</strong> an account.
         </h2>
         <div className="form-group mt-3">
           <input
             className="form-control"
+            type="txt"
+            name="name"
+            value={user.name}
+            onChange={handleInput}
+            placeholder="name"
+          />
+        </div>
+        <div className="form-group mt-3">
+          <input
+            className="form-control"
             type="email"
             name="email"
+            value={user.email}
+            onChange={handleInput}
             placeholder="Email"
           />
         </div>
@@ -60,6 +71,8 @@ const Signup = () => {
             className="form-control"
             type="password"
             name="password"
+            value={user.password}
+            onChange={handleInput}
             placeholder="Password"
           />
         </div>
@@ -67,7 +80,9 @@ const Signup = () => {
           <input
             className="form-control"
             type="password"
-            name="password-repeat"
+            name="cpassword"
+            value={user.cpassword}
+            onChange={handleInput}
             placeholder="Password (repeat)"
           />
         </div>
@@ -80,13 +95,15 @@ const Signup = () => {
           </div>
         </div>
         <div className="form-group mt-3">
-          <button className="btn btn-success btn-block" type="submit">
-            Sign Up
-          </button>
+          
+            <button className="btn btn-success btn-block" type="submit" onClick={PostData}>
+              Sign Up
+            </button>
+          
         </div>
-        <a className="already mt-3" href="#">
+        <NavLink className="already mt-3" to={rout}>
           You already have an account? Login here.
-        </a>
+        </NavLink>
       </form>
     </div>
   </div>

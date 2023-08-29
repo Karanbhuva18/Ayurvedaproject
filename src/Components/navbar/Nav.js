@@ -25,9 +25,22 @@ const Nav = () => {
           <div className="collapse navbar-collapse justify-content-center col-5 top-center" id="navbarSupportedContent">
             <ul className="navbar-nav">
 
+            <li className="nav-item">
+                <NavLink  to="/" className="nav-link"  style={{ color: '#23914E' }}>
+                SignUp
+                </NavLink>
+            </li>
+
+
               <li className="nav-item">
-                <NavLink to="/" className="nav-link"  style={{ color: '#23914E' }}>
-                  Main
+                <NavLink to="/Home" className="nav-link"  style={{ color: '#23914E' }}>
+                  Home
+                </NavLink>
+              </li>
+
+              <li className="nav-item">
+                <NavLink to="/Main" className="nav-link"  style={{ color: '#23914E' }}>
+                  Blogs
                 </NavLink>
               </li>
 
@@ -37,11 +50,7 @@ const Nav = () => {
                 </NavLink>
               </li>
 
-              <li className="nav-item">
-                <NavLink  to="/Single" className="nav-link"  style={{ color: '#23914E' }}>
-                  Single
-                </NavLink>
-              </li>
+             
               <li className="nav-item">
                 <NavLink  to="/About" className="nav-link"  style={{ color: '#23914E' }}>
                   AboutUs
@@ -62,9 +71,10 @@ const Nav = () => {
                 Login
                 </NavLink>
               </li>
+              
               <li className="nav-item">
-                <NavLink  to="/signup" className="nav-link"  style={{ color: '#23914E' }}>
-                SignUp
+                <NavLink  to="/Exam" className="nav-link"  style={{ color: '#23914E' }}>
+                Exam
                 </NavLink>
               </li>
 

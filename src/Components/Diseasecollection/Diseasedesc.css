@@ -1,26 +1,69 @@
-.desccontainer{
-    flex:8;
+/* Common styles */
+.desccontainer {
+    flex: 8;
     border: 2px solid #c5c7c9;
     margin-top: 20px;
     position: relative;
     background-color: #eafaf1fb;
-    color: #00294D;
-}
-.imgcontainer{
+    color: #00294d;
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  .imgcontainer {
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end;
-}
-.imgcontainer img{
-    height: 200px;
-    width: 300px;
-   
-}
-.Diseasetitle{
+    justify-content: center; /* Center the image horizontally */
+    position: relative;
+    margin-left: 290px;
+  }
+  
+  .imgcontainer img {
+    width: 100%;
+    max-width: 300px; /* Set the maximum width to 150px */
+    height: auto;
+  }
+  
+  .Diseasetitle {
     position: absolute;
     left: 40px;
     top: 50px;
-}
-.infoabout{
+  }
+  
+  .infoabout {
     font-size: 2.5rem;
-}
+  }
+  
+  .started {
+    font-size: 1.3rem;
+    font-weight: bolder;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .desccontainer {
+      padding: 10px; /* Adjust padding for smaller screens */
+      margin: 0; /* Remove left margin */
+    }
+  
+    .imgcontainer {
+      margin: 0; /* Remove margin for smaller screens */
+    }
+  
+    .imgcontainer img {
+      max-width: 100%; /* Adjust max-width for responsiveness */
+    }
+  
+    .Diseasetitle {
+      left: 20px; /* Adjust left position for smaller screens */
+      top: 20px; /* Adjust top position for smaller screens */
+    }
+  
+    .infoabout {
+      font-size: 2rem; /* Reduce font size for smaller screens */
+    }
+  
+    .started {
+      font-size: 1.2rem; /* Reduce font size for smaller screens */
+    }
+  }
+  

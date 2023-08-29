@@ -11,7 +11,7 @@ const Disease = [
       "Restless leg syndrome",
       "Dry skin",
       "Irregular menstruation",
-      "Sciatica",
+      
       "Nervous system disorders"
      ]
      
@@ -28,10 +28,8 @@ const Disease = [
       "Ulcers (peptic and mouth ulcers)",
       "Anger and irritability",
       "Heartburn",
-      "Gastritis",
-      "Excessive hunger and thirst",
-      "Liver disorders",
-      "Inflammatory skin conditions (e.g., eczema)"
+      "Liver disorders"
+      
       ]
     },
 
